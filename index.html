@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slay &amp; Shine Salon — Premium Beauty Studio</title>
+  <meta name="description" content="Slay &amp; Shine Salon — Where every visit leaves you glowing. Premium hair, nails, lashes &amp; beauty services. Book your transformation today." />
+  <meta property="og:title" content="Slay &amp; Shine Salon" />
+  <meta property="og:description" content="Premium beauty studio. Hair, nails, lashes &amp; more." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Slay & Shine Salon",
+    "url": "https://slayshinesalon.com",
+    "telephone": "",
+    "address": { "@type": "PostalAddress", "addressCountry": "AU" },
+    "sameAs": ["https://www.instagram.com/slayshinesalon/"],
+    "openingHours": ["Tu-Fr 09:00-18:00","Sa 09:00-17:00","Su 10:00-16:00"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Quick Links -->
+<div class="quicklinks" role="navigation" aria-label="Quick links">
+  <nav class="no-scroll">
+    <a href="#services">Services</a><span class="sep">·</span>
+    <a href="#about">About</a><span class="sep">·</span>
+    <a href="#gallery">Gallery</a><span class="sep">·</span>
+    <a href="#reviews">Reviews</a><span class="sep">·</span>
+    <a href="#location">Location</a><span class="sep">·</span>
+    <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="hl">Instagram ↗</a>
+  </nav>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar" role="banner">
+  <div class="navbar__row">
+    <nav class="nav-side" aria-label="Primary navigation left">
+      <a href="#about" class="navbar__link">About</a>
+      <a href="#services" class="navbar__link">Services</a>
+      <a href="#gallery" class="navbar__link">Gallery</a>
+    </nav>
+
+    <a href="#" class="navbar__logo" aria-label="Slay &amp; Shine Salon — Home">
+      <img src="assets/logo.png" alt="Slay &amp; Shine Salon logo" />
+    </a>
+
+    <nav class="nav-side nav-side--right" aria-label="Primary navigation right">
+      <a href="#reviews" class="navbar__link">Reviews</a>
+      <a href="#location" class="navbar__link">Location</a>
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <span>Book Now</span>
+      </a>
+    </nav>
+
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="drawer__close" id="drawerClose" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+  <nav class="drawer__nav">
+    <a href="#about"    onclick="closeDrawer()">About</a>
+    <a href="#services" onclick="closeDrawer()">Services</a>
+    <a href="#gallery"  onclick="closeDrawer()">Gallery</a>
+    <a href="#reviews"  onclick="closeDrawer()">Reviews</a>
+    <a href="#location" onclick="closeDrawer()">Location</a>
+  </nav>
+  <div class="drawer__cta">
+    <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+      <span>Book Now</span>
+    </a>
+  </div>
+</div>
+
+<!-- Hero -->
+<main>
+<section class="hero" aria-label="Hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-particles"></div>
+    <div class="hero__bg-fade"></div>
+  </div>
+  <div class="hero__content">
+    <span class="hero__eyebrow">Premium Beauty Studio</span>
+
+    <div class="hero__logo-wrap">
+      <img src="assets/logo.png" alt="Slay &amp; Shine crest" />
+    </div>
+
+    <h1 class="hero__title text-glow">
+      Slay &amp; <em>Shine</em>
+    </h1>
+    <p class="hero__sub">
+      Where every visit leaves you glowing. Hair, nails, lashes and brow artistry — crafted with precision, delivered with luxury.
+    </p>
+
+    <div class="hero__proofbar" aria-label="Highlights">
+      <span class="hero__proof">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        5-Star Rated
+      </span>
+      <span class="hero__proof">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Flexible Hours
+      </span>
+      <span class="hero__proof">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Walk-Ins Welcome
+      </span>
+      <span class="hero__proof">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Expert Artists
+      </span>
+    </div>
+
+    <div class="hero__actions">
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <span>Book Your Appointment</span>
+      </a>
+      <a href="#services" class="hero__link-text">
+        View Services
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Live Status -->
+    <div style="margin-top: 32px; display: flex; justify-content: center;">
+      <span class="status-badge" id="statusBadge" role="status" aria-live="polite">
+        <span class="dot"></span>
+        <span id="statusText">Checking hours…</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-label">Scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="trustbar" role="complementary" aria-label="Why choose us">
+  <div class="trustbar__inner">
+    <div class="trustbar__item reveal d1">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div>
+        <p class="trustbar__label">5-Star Rated</p>
+        <p class="trustbar__sub">Consistently top reviewed</p>
+      </div>
+    </div>
+    <div class="trustbar__item reveal d2">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <div>
+        <p class="trustbar__label">Walk-Ins Welcome</p>
+        <p class="trustbar__sub">No appointment needed</p>
+      </div>
+    </div>
+    <div class="trustbar__item reveal d3">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div>
+        <p class="trustbar__label">Flexible Hours</p>
+        <p class="trustbar__sub">Tue–Sun, open late Fri</p>
+      </div>
+    </div>
+    <div class="trustbar__item reveal d4">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div>
+        <p class="trustbar__label">Expert Artists</p>
+        <p class="trustbar__sub">Trained &amp; certified team</p>
+      </div>
+    </div>
+    <div class="trustbar__item reveal d5">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div>
+        <p class="trustbar__label">Premium Products</p>
+        <p class="trustbar__sub">Professional grade only</p>
+      </div>
+    </div>
+    <div class="trustbar__item reveal d6">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div>
+        <p class="trustbar__label">Easy Location</p>
+        <p class="trustbar__sub">Parking available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section class="section section--dark" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__media glass-panel reveal-left">
+        <div class="about__media-deco" aria-hidden="true"></div>
+        <img src="assets/logo.png" alt="" class="about__media-logo" aria-hidden="true" />
+        <div class="about__media-caption">
+          <p class="about__brand">Slay &amp; Shine</p>
+          <p class="about__tag">Est. with love &amp; artistry</p>
+        </div>
+      </div>
+
+      <div class="about__body reveal-right">
+        <span class="sub-label">Our Story</span>
+        <h2 class="section-title" id="about-title">Born to <em>Elevate</em></h2>
+
+        <p>
+          <strong>Slay &amp; Shine Salon</strong> was born from a passion for beauty and a belief that every person deserves to feel extraordinary. We combine artistry with premium products to create looks that are uniquely yours.
+        </p>
+        <p>
+          Whether you're coming in for a fresh cut, a colour transformation, flawless nails or radiant lashes — our team of skilled artists is dedicated to making you look and feel your absolute best.
+        </p>
+        <p>
+          We don't just do hair and beauty. We craft confidence.
+        </p>
+
+        <div class="about__chips" role="list" aria-label="Our specialties">
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Hair Artistry
+          </span>
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Nail Studio
+          </span>
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Lash Extensions
+          </span>
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Brow Design
+          </span>
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Colour &amp; Balayage
+          </span>
+          <span class="about__chip" role="listitem">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Bridal Packages
+          </span>
+        </div>
+
+        <div class="about__actions">
+          <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="about__action about__action--gold">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Follow on Instagram
+          </a>
+          <a href="#services" class="about__action about__action--muted">
+            View All Services
+          </a>
+        </div>
+
+        <div class="about__socials" aria-label="Social links">
+          <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="about__social" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="about__social" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="about__social" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.53V6.77a4.85 4.85 0 0 1-1.01-.08z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section__line" aria-hidden="true"></div>
+
+<!-- Services -->
+<section class="section section--alt" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services__hd">
+      <div class="services__hd-copy reveal">
+        <span class="sub-label">Our Menu</span>
+        <h2 class="section-title" id="services-title">Services &amp; <em>Pricing</em></h2>
+        <p>Every service is tailored to you. Our artists take the time to understand your vision and deliver results that exceed expectations.</p>
+      </div>
+      <div class="reveal d2">
+        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+          <span>Book a Service</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="services__cols">
+      <!-- Column 1 -->
+      <div class="services__list">
+
+        <article class="svc reveal d1">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Cut &amp; Style</h3>
+            </div>
+            <span class="svc__price">from $65</span>
+          </div>
+          <p class="svc__desc">A precision cut tailored to your face shape, finished with a professional blow-dry and style.</p>
+          <div class="svc__foot">
+            <span class="svc__time">60 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d2">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Blowout &amp; Finish</h3>
+            </div>
+            <span class="svc__price">from $45</span>
+          </div>
+          <p class="svc__desc">A sleek, voluminous blowout that lasts. Perfect for any occasion or a mid-week refresh.</p>
+          <div class="svc__foot">
+            <span class="svc__time">45 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d3">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Colour &amp; Toning</h3>
+            </div>
+            <span class="svc__price">from $95</span>
+          </div>
+          <p class="svc__desc">Full colour, root touch-up or toning service using premium professional colour for vibrant, long-lasting results.</p>
+          <div class="svc__foot">
+            <span class="svc__time">90 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d4">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Highlights &amp; Balayage</h3>
+            </div>
+            <span class="svc__price">from $145</span>
+          </div>
+          <p class="svc__desc">Sun-kissed, natural-looking dimension painted to flatter your complexion. Foils, balayage or a custom blend.</p>
+          <div class="svc__foot">
+            <span class="svc__time">120 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Column 2 -->
+      <div class="services__list">
+
+        <article class="svc reveal d1">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Keratin Treatment</h3>
+            </div>
+            <span class="svc__price">from $220</span>
+          </div>
+          <p class="svc__desc">Eliminate frizz and add intense shine with a Brazilian keratin treatment. Smooth, silky results for weeks.</p>
+          <div class="svc__foot">
+            <span class="svc__time">180 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d2">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Lash Extensions</h3>
+            </div>
+            <span class="svc__price">from $110</span>
+          </div>
+          <p class="svc__desc">Classic, hybrid or volume lashes meticulously applied for a glamorous, low-maintenance look.</p>
+          <div class="svc__foot">
+            <span class="svc__time">90 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d3">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Brow Design</h3>
+            </div>
+            <span class="svc__price">from $25</span>
+          </div>
+          <p class="svc__desc">Threading, waxing or lamination — perfectly sculpted brows that frame your face.</p>
+          <div class="svc__foot">
+            <span class="svc__time">20 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="svc reveal d4">
+          <div class="svc__top">
+            <div class="svc__name-wrap">
+              <span class="svc__bar" aria-hidden="true"></span>
+              <h3 class="svc__name">Nails &amp; Gel</h3>
+            </div>
+            <span class="svc__price">from $55</span>
+          </div>
+          <p class="svc__desc">Manicure, pedicure or gel overlay — nails done with precision and a flawless finish.</p>
+          <div class="svc__foot">
+            <span class="svc__time">60 min</span>
+            <span class="svc__dash" aria-hidden="true"></span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="services__cta reveal">
+      <p style="color: var(--w30); font-size: 13px; margin-bottom: 24px; font-weight: 300;">
+        Prices may vary. Contact us for a personalised quote.
+      </p>
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <span>Book Your Service</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section__line" aria-hidden="true"></div>
+
+<!-- Gallery -->
+<section class="section section--dark" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="gallery__intro reveal">
+      <span class="sub-label">Our Work</span>
+      <h2 class="section-title" id="gallery-title">The <em>Looks</em></h2>
+      <p>Follow us on Instagram to see our latest transformations, client results and behind-the-scenes moments.</p>
+    </div>
+
+    <div class="gallery__grid" role="list" aria-label="Gallery">
+      <div class="gallery__cell reveal d1" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 1">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Hair</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d2" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Colour</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d3" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 3">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Lashes</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d4" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Nails</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d2" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 5">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Brows</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d3" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Blowout</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d1" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 7">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Balayage</span>
+        </div>
+      </div>
+      <div class="gallery__cell reveal d4" role="listitem">
+        <div class="gallery__ph" aria-label="Gallery image 8">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Bridal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery__cta reveal">
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <span>View Instagram Gallery ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section__line" aria-hidden="true"></div>
+
+<!-- Reviews -->
+<section class="reviews section" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="reviews__hd reveal">
+      <div class="sparkle-line" aria-hidden="true">
+        <span></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span></span>
+      </div>
+      <h2 class="reviews__title" id="reviews-title">Client Love</h2>
+      <p class="reviews__desc">Don't take our word for it — here's what our clients are saying.</p>
+    </div>
+
+    <div class="reviews__meta reveal">
+      <div class="reviews__score">
+        <span class="reviews__num">5.0</span>
+        <div>
+          <div class="reviews__stars" aria-label="5 stars">★★★★★</div>
+          <p class="reviews__count">Google Reviews</p>
+        </div>
+      </div>
+      <a href="https://www.google.com/search?q=slay+shine+salon" target="_blank" rel="noopener" class="reviews__write">Leave a Review</a>
+    </div>
+
+    <div class="reviews__grid">
+      <article class="rcard reveal d1">
+        <div class="rcard__top">
+          <div>
+            <div class="rcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="rcard__date">2 weeks ago</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <p class="rcard__text">"Absolutely obsessed with my hair! The balayage turned out exactly how I envisioned. The team is so talented and the salon is beautiful. I won't go anywhere else!"</p>
+        <div class="rcard__author">
+          <div class="rcard__avatar" aria-hidden="true">S</div>
+          <span class="rcard__name">Sophia T.</span>
+        </div>
+      </article>
+
+      <article class="rcard reveal d2">
+        <div class="rcard__top">
+          <div>
+            <div class="rcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="rcard__date">1 month ago</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <p class="rcard__text">"My lashes look incredible. I've been to many salons and Slay &amp; Shine is on a completely different level. So professional, so welcoming. 10/10 every time."</p>
+        <div class="rcard__author">
+          <div class="rcard__avatar" aria-hidden="true">A</div>
+          <span class="rcard__name">Aaliyah M.</span>
+        </div>
+      </article>
+
+      <article class="rcard reveal d3">
+        <div class="rcard__top">
+          <div>
+            <div class="rcard__stars" aria-label="5 stars">★★★★★</div>
+            <p class="rcard__date">3 weeks ago</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <p class="rcard__text">"Got my nails and brows done and I left feeling like a whole new person. The attention to detail is unreal. Already booked my next appointment!"</p>
+        <div class="rcard__author">
+          <div class="rcard__avatar" aria-hidden="true">J</div>
+          <span class="rcard__name">Jasmine K.</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="reviews__cta reveal">
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="reviews__cta-btn">Book Your Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band section" aria-labelledby="cta-title">
+  <div class="cta-band__bg" aria-hidden="true"></div>
+  <div class="cta-band__inner">
+    <div class="sparkle-line reveal" aria-hidden="true">
+      <span></span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <span></span>
+    </div>
+    <span class="sub-label reveal">Ready to Glow?</span>
+    <h2 class="section-title reveal" id="cta-title">Your <em>Transformation</em> Awaits</h2>
+    <p class="cta-band__sub reveal d2">
+      Whether it's a fresh cut, a colour refresh or a full beauty day — we're here to make you feel extraordinary.
+    </p>
+    <div class="reveal d3" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <span>Book on Instagram</span>
+      </a>
+      <p style="font-size: 11px; color: var(--w20); letter-spacing: 0.2em; text-transform: uppercase;">Walk-ins welcome · DM us anytime</p>
+    </div>
+  </div>
+</section>
+
+<div class="section__line" aria-hidden="true"></div>
+
+<!-- Location -->
+<section class="section section--dark" id="location" aria-labelledby="location-title">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 64px;">
+      <span class="sub-label">Find Us</span>
+      <h2 class="section-title" id="location-title">Location &amp; <em>Hours</em></h2>
+    </div>
+
+    <div class="map__embed reveal">
+      <iframe
+        title="Slay &amp; Shine Salon location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9!2d151.2!3d-33.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUyJzEyLjAiUyAxNTHCsDEyJzAwLjAiRQ!5e0!3m2!1sen!2sau!4v1620000000000!5m2!1sen!2sau"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Map showing salon location">
+      </iframe>
+    </div>
+
+    <div class="map__info reveal">
+      <div class="map__group">
+        <p class="map__group-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Address
+        </p>
+        <p class="map__line">Slay &amp; Shine Salon<br>Your Street Address<br>City, State, Postcode</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="map__link">
+          Get Directions
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="map__group">
+        <p class="map__group-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Hours
+        </p>
+        <p class="map__line">Mon: Closed</p>
+        <p class="map__line">Tue–Thu: 9am – 6pm</p>
+        <p class="map__line">Fri: 9am – 7pm</p>
+        <p class="map__line">Sat: 9am – 5pm</p>
+        <p class="map__line">Sun: 10am – 4pm</p>
+      </div>
+
+      <div class="map__group">
+        <p class="map__group-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Contact
+        </p>
+        <a href="tel:" class="map__line" style="transition: color 0.3s;">Call Us</a>
+        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="map__line" style="transition: color 0.3s;">DM on Instagram</a>
+        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="map__link">
+          @slayshinesalon
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="map__group">
+        <p class="map__group-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Booking
+        </p>
+        <p class="map__line">Walk-ins welcome<br>or book ahead via Instagram DM</p>
+        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="map__link">
+          Book Now
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo-wrap">
+        <img src="assets/logo.png" alt="Slay &amp; Shine Salon" />
+      </div>
+      <p class="footer__name">Slay &amp; Shine Salon</p>
+      <p class="footer__tag">Where every visit leaves you glowing</p>
+      <p class="footer__desc">
+        Premium beauty studio offering hair, nails, lashes, brows and more. Walk-ins welcome.
+      </p>
+
+      <div class="footer__socials" aria-label="Follow us">
+        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__social" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="footer__social" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.53V6.77a4.85 4.85 0 0 1-1.01-.08z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__cols">
+      <div>
+        <p class="footer__col-title">Services</p>
+        <div class="footer__col-body">
+          <a href="#services">Cut &amp; Style</a>
+          <a href="#services">Colour &amp; Balayage</a>
+          <a href="#services">Lash Extensions</a>
+          <a href="#services">Brow Design</a>
+          <a href="#services">Nails &amp; Gel</a>
+          <a href="#services">Keratin Treatment</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Studio</p>
+        <div class="footer__col-body">
+          <a href="#about">About Us</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#location">Location</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Hours</p>
+        <div class="footer__col-body">
+          <p>Monday: Closed</p>
+          <p>Tue–Thu: 9am–6pm</p>
+          <p>Friday: 9am–7pm</p>
+          <p>Saturday: 9am–5pm</p>
+          <p>Sunday: 10am–4pm</p>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Connect</p>
+        <div class="footer__col-body">
+          <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Slay &amp; Shine Salon. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky Book Button -->
+<div class="mob-book" aria-label="Mobile booking button">
+  <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    <span>Book Now</span>
+  </a>
+</div>
+
+<script>
+  /* ── Navbar scroll ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  /* ── Mobile drawer ── */
+  const menuBtn    = document.getElementById('menuBtn');
+  const drawer     = document.getElementById('drawer');
+  const drawerClose = document.getElementById('drawerClose');
+
+  menuBtn.addEventListener('click', () => {
+    drawer.classList.add('open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  drawerClose.addEventListener('click', closeDrawer);
+  drawer.addEventListener('click', e => { if (e.target === drawer) closeDrawer(); });
+
+  /* ── Scroll reveal ── */
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const observer  = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+
+  /* ── Live status badge ── */
+  (function () {
+    const badge  = document.getElementById('statusBadge');
+    const text   = document.getElementById('statusText');
+    if (!badge || !text) return;
+
+    /* Hours: Mon closed; Tue-Thu 9-18; Fri 9-19; Sat 9-17; Sun 10-16 */
+    const schedule = [
+      null,
+      [9, 18], [9, 18], [9, 18], [9, 19],
+      [9, 17], [10, 16]
+    ];
+
+    const now  = new Date();
+    const day  = now.getDay();
+    const h    = now.getHours() + now.getMinutes() / 60;
+    const slot = schedule[day];
+
+    let open = false;
+    let label = 'Closed Today';
+
+    if (slot) {
+      if (h >= slot[0] && h < slot[1]) {
+        open  = true;
+        const closingHour = slot[1];
+        const closingStr  = closingHour >= 12
+          ? (closingHour === 12 ? '12pm' : (closingHour - 12) + 'pm')
+          : closingHour + 'am';
+        label = 'Open Now · Closes ' + closingStr;
+      } else if (h < slot[0]) {
+        const openHour = slot[0];
+        label = 'Opens at ' + (openHour >= 12 ? (openHour - 12 || 12) + 'pm' : openHour + 'am');
+      } else {
+        label = 'Closed · Opens Tomorrow';
+      }
+    }
+
+    badge.className = 'status-badge ' + (open ? 'status-badge--open' : 'status-badge--closed');
+    text.textContent = label;
+  })();
+</script>
+</body>
+</html>
