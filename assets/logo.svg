@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" fill="none">
+  <defs>
+    <linearGradient id="goldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#e8cc6e"/>
+      <stop offset="40%"  stop-color="#c9a84c"/>
+      <stop offset="70%"  stop-color="#b8902e"/>
+      <stop offset="100%" stop-color="#d4af50"/>
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f0d97a"/>
+      <stop offset="50%"  stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a07830"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#dfc060"/>
+      <stop offset="100%" stop-color="#b8902e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── Outer ring ── -->
+  <circle cx="250" cy="255" r="195" stroke="url(#goldMain)" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <!-- inner thin ring -->
+  <circle cx="250" cy="255" r="188" stroke="url(#goldMain)" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+  <!-- ── Ring sparkles / dots scattered around the circle ── -->
+  <!-- top sparkle cluster -->
+  <g fill="#c9a84c" opacity="0.7">
+    <rect x="248" y="57" width="4" height="4" transform="rotate(45 250 59)"/>
+    <rect x="220" y="66" width="2.5" height="2.5" transform="rotate(45 221.5 67.5)"/>
+    <rect x="277" y="66" width="2.5" height="2.5" transform="rotate(45 278.5 67.5)"/>
+    <circle cx="205" cy="78" r="1.8"/>
+    <circle cx="296" cy="78" r="1.8"/>
+    <circle cx="192" cy="94" r="1.2"/>
+    <circle cx="308" cy="94" r="1.2"/>
+    <circle cx="263" cy="61" r="1.2"/>
+    <circle cx="237" cy="61" r="1.2"/>
+  </g>
+
+  <!-- bottom-right star burst -->
+  <g transform="translate(402,355)" fill="#c9a84c" opacity="0.75">
+    <rect x="-2" y="-14" width="4" height="28" rx="2"/>
+    <rect x="-14" y="-2" width="28" height="4" rx="2"/>
+    <rect x="-10" y="-10" width="3" height="20" rx="1.5" transform="rotate(45)"/>
+    <rect x="-10" y="-10" width="3" height="20" rx="1.5" transform="rotate(-45)"/>
+    <circle cx="0" cy="0" r="2"/>
+  </g>
+
+  <!-- top-left mini star -->
+  <g transform="translate(98,170)" fill="#c9a84c" opacity="0.5">
+    <rect x="-1.5" y="-10" width="3" height="20" rx="1.5"/>
+    <rect x="-10" y="-1.5" width="20" height="3" rx="1.5"/>
+    <rect x="-7" y="-7" width="2.5" height="14" rx="1.2" transform="rotate(45)"/>
+    <rect x="-7" y="-7" width="2.5" height="14" rx="1.2" transform="rotate(-45)"/>
+  </g>
+
+  <!-- bottom-left scattered dots -->
+  <g fill="#c9a84c" opacity="0.55">
+    <circle cx="110" cy="310" r="2.5"/>
+    <circle cx="98"  cy="330" r="1.5"/>
+    <circle cx="122" cy="335" r="1.5"/>
+    <circle cx="390" cy="185" r="2"/>
+    <circle cx="405" cy="200" r="1.2"/>
+    <circle cx="382" cy="205" r="1.2"/>
+    <circle cx="140" cy="390" r="1.8"/>
+    <circle cx="127" cy="375" r="1.2"/>
+    <circle cx="355" cy="400" r="1.8"/>
+    <circle cx="370" cy="415" r="1.2"/>
+    <rect x="81"  y="248" width="2" height="2" transform="rotate(45 82 249)"/>
+    <rect x="415" y="248" width="2" height="2" transform="rotate(45 416 249)"/>
+    <rect x="88"  y="230" width="1.5" height="1.5" transform="rotate(45 89 231)" opacity="0.5"/>
+    <rect x="408" y="265" width="1.5" height="1.5" transform="rotate(45 409 266)" opacity="0.5"/>
+  </g>
+
+  <!-- ── Crown / Tiara ── -->
+  <g transform="translate(250, 115)" filter="url(#glow)">
+    <!-- crown base band -->
+    <path d="M-55,28 Q-55,36 -45,36 L45,36 Q55,36 55,28 L55,8 L-55,8 Z"
+          fill="url(#goldMain)" opacity="0.95"/>
+    <!-- crown points -->
+    <!-- left outer point -->
+    <path d="M-55,8 L-65,-16 L-42,0 Z" fill="url(#goldMain)"/>
+    <!-- left inner point -->
+    <path d="M-28,8 L-28,-22 L-8,-2 Z" fill="url(#goldLight)"/>
+    <!-- center point (tallest) -->
+    <path d="M0,8 L0,-38 L14,4 L-14,4 Z" fill="url(#goldMain)"/>
+    <!-- right inner point -->
+    <path d="M28,8 L28,-22 L8,-2 Z" fill="url(#goldLight)"/>
+    <!-- right outer point -->
+    <path d="M55,8 L65,-16 L42,0 Z" fill="url(#goldMain)"/>
+
+    <!-- center diamond gem -->
+    <path d="M0,-38 L8,-26 L0,-18 L-8,-26 Z" fill="#f5e8a0" stroke="#c9a84c" stroke-width="1"/>
+    <path d="M0,-18 L8,-26 L0,-22 Z" fill="#dfc060" opacity="0.6"/>
+
+    <!-- decorative scrollwork on base -->
+    <path d="M-45,22 C-38,16 -28,16 -20,22" stroke="url(#goldLight)" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <path d="M20,22 C28,16 38,16 45,22"     stroke="url(#goldLight)" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <circle cx="-12" cy="22" r="3" fill="#e8cc6e" opacity="0.8"/>
+    <circle cx="0"   cy="20" r="3.5" fill="#f0d97a" opacity="0.9"/>
+    <circle cx="12"  cy="22" r="3"   fill="#e8cc6e" opacity="0.8"/>
+
+    <!-- small bead accents -->
+    <circle cx="-30" cy="15" r="2"  fill="#dfc060" opacity="0.7"/>
+    <circle cx="30"  cy="15" r="2"  fill="#dfc060" opacity="0.7"/>
+    <circle cx="-48" cy="12" r="1.5" fill="#c9a84c" opacity="0.6"/>
+    <circle cx="48"  cy="12" r="1.5" fill="#c9a84c" opacity="0.6"/>
+  </g>
+
+  <!-- ── Double-S Monogram ── -->
+  <!--
+    Two overlapping stylized S glyphs in a flowing script style.
+    Upper S is slightly offset up-right; lower S offset down-left.
+  -->
+  <!-- Upper S -->
+  <path d="
+    M 290,165
+    C 310,155 340,158 348,175
+    C 356,192 342,208 318,215
+    C 300,220 278,222 268,235
+    C 256,250 260,272 278,282
+    C 296,292 330,290 348,278
+  "
+  stroke="url(#goldMain)" stroke-width="22" stroke-linecap="round" fill="none"
+  opacity="0.92" filter="url(#glow)"/>
+  <path d="
+    M 290,165
+    C 310,155 340,158 348,175
+    C 356,192 342,208 318,215
+    C 300,220 278,222 268,235
+    C 256,250 260,272 278,282
+    C 296,292 330,290 348,278
+  "
+  stroke="url(#goldLight)" stroke-width="10" stroke-linecap="round" fill="none"
+  opacity="0.5"/>
+
+  <!-- Lower S (offset, creates the double-S layered look) -->
+  <path d="
+    M 212,205
+    C 232,193 265,196 273,214
+    C 281,232 266,248 242,256
+    C 222,262 198,265 188,280
+    C 176,297 181,320 200,330
+    C 218,340 254,338 272,325
+  "
+  stroke="url(#goldSoft)" stroke-width="22" stroke-linecap="round" fill="none"
+  opacity="0.92" filter="url(#glow)"/>
+  <path d="
+    M 212,205
+    C 232,193 265,196 273,214
+    C 281,232 266,248 242,256
+    C 222,262 198,265 188,280
+    C 176,297 181,320 200,330
+    C 218,340 254,338 272,325
+  "
+  stroke="url(#goldLight)" stroke-width="10" stroke-linecap="round" fill="none"
+  opacity="0.45"/>
+
+  <!-- ── "SLAY & SHINE" text ── -->
+  <text
+    x="250" y="496"
+    font-family="'Garamond', 'Georgia', 'Times New Roman', serif"
+    font-size="28"
+    font-weight="400"
+    letter-spacing="10"
+    text-anchor="middle"
+    fill="url(#goldMain)"
+    opacity="0.92"
+  >SLAY &amp; SHINE</text>
+
+  <!-- thin rule under text -->
+  <line x1="148" y1="505" x2="352" y2="505" stroke="url(#goldMain)" stroke-width="0.8" opacity="0.4"/>
+</svg>
