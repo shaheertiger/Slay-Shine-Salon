@@ -53,7 +53,7 @@
     <nav class="nav-side nav-side--right" aria-label="Primary navigation right">
       <a href="#reviews" class="navbar__link">Reviews</a>
       <a href="#location" class="navbar__link">Location</a>
-      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+      <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
         <span>Book Now</span>
       </a>
     </nav>
@@ -81,7 +81,7 @@
     <a href="#location" onclick="closeDrawer()">Location</a>
   </nav>
   <div class="drawer__cta">
-    <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+    <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
       <span>Book Now</span>
     </a>
   </div>
@@ -128,7 +128,7 @@
     </div>
 
     <div class="hero__actions">
-      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+      <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
         <span>Book Your Appointment</span>
       </a>
       <a href="#services" class="hero__link-text">
@@ -291,149 +291,192 @@
         <p>Every service is tailored to you. Our artists take the time to understand your vision and deliver results that exceed expectations.</p>
       </div>
       <div class="reveal d2">
-        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+        <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
           <span>Book a Service</span>
         </a>
       </div>
     </div>
 
-    <div class="services__cols">
-      <!-- Column 1 -->
-      <div class="services__list">
+    <div class="svc-filters reveal">
+      <button class="svc-filter active" data-filter="all">All</button>
+      <button class="svc-filter" data-filter="hair">Hair</button>
+      <button class="svc-filter" data-filter="waxing">Waxing &amp; Threading</button>
+      <button class="svc-filter" data-filter="facials">Facials &amp; Skin</button>
+      <button class="svc-filter" data-filter="nails">Nails</button>
+      <button class="svc-filter" data-filter="mens">Men's</button>
+    </div>
 
-        <article class="svc reveal d1">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Cut &amp; Style</h3>
-            </div>
-            <span class="svc__price">from $65</span>
-          </div>
-          <p class="svc__desc">A precision cut tailored to your face shape, finished with a professional blow-dry and style.</p>
-          <div class="svc__foot">
-            <span class="svc__time">60 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
+    <div class="services__grid">
 
-        <article class="svc reveal d2">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Blowout &amp; Finish</h3>
-            </div>
-            <span class="svc__price">from $45</span>
-          </div>
-          <p class="svc__desc">A sleek, voluminous blowout that lasts. Perfect for any occasion or a mid-week refresh.</p>
-          <div class="svc__foot">
-            <span class="svc__time">45 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
+      <!-- Hair -->
+      <article class="svc reveal d1" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Hair Cut</h3></div><span class="svc__price">From $35</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Hair Trimming</h3></div><span class="svc__price">From $20</span></div>
+        <div class="svc__foot"><span class="svc__time">20 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Bangs</h3></div><span class="svc__price">Price varies</span></div>
+        <div class="svc__foot"><span class="svc__time">15 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Blow Dry</h3></div><span class="svc__price">From $35</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Ironing</h3></div><span class="svc__price">From $40</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Hair Styling</h3></div><span class="svc__price">From $50</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Roots</h3></div><span class="svc__price">$40</span></div>
+        <div class="svc__foot"><span class="svc__time">45 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Global Color</h3></div><span class="svc__price">From $80</span></div>
+        <div class="svc__foot"><span class="svc__time">1 hr 15 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Highlights</h3></div><span class="svc__price">From $120</span></div>
+        <div class="svc__foot"><span class="svc__time">2 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Smoothing</h3></div><span class="svc__price">Call for price</span></div>
+        <div class="svc__foot"><span class="svc__time">3 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="hair">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Keratin</h3></div><span class="svc__price">Call for price</span></div>
+        <div class="svc__foot"><span class="svc__time">3 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
 
-        <article class="svc reveal d3">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Colour &amp; Toning</h3>
-            </div>
-            <span class="svc__price">from $95</span>
-          </div>
-          <p class="svc__desc">Full colour, root touch-up or toning service using premium professional colour for vibrant, long-lasting results.</p>
-          <div class="svc__foot">
-            <span class="svc__time">90 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
+      <!-- Waxing & Threading -->
+      <article class="svc reveal d4" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Arms</h3></div><span class="svc__price">$20</span></div>
+        <div class="svc__foot"><span class="svc__time">15 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Legs</h3></div><span class="svc__price">$30</span></div>
+        <div class="svc__foot"><span class="svc__time">20 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Underarms</h3></div><span class="svc__price">$10</span></div>
+        <div class="svc__foot"><span class="svc__time">5 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Full Body</h3></div><span class="svc__price">$120</span></div>
+        <div class="svc__foot"><span class="svc__time">40 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Full Back</h3></div><span class="svc__price">$25</span></div>
+        <div class="svc__foot"><span class="svc__time">20 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Belly</h3></div><span class="svc__price">$25</span></div>
+        <div class="svc__foot"><span class="svc__time">20 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Bikini Line</h3></div><span class="svc__price">$25</span></div>
+        <div class="svc__foot"><span class="svc__time">15 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Brazilian</h3></div><span class="svc__price">$40</span></div>
+        <div class="svc__foot"><span class="svc__time">20 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Waxing Eyebrows</h3></div><span class="svc__price">$10</span></div>
+        <div class="svc__foot"><span class="svc__time">5 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Face Wax</h3></div><span class="svc__price">Call for price</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Threading Eyebrows</h3></div><span class="svc__price">$7</span></div>
+        <div class="svc__foot"><span class="svc__time">5 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="waxing">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Upper Lip Threading</h3></div><span class="svc__price">$5</span></div>
+        <div class="svc__foot"><span class="svc__time">5 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
 
-        <article class="svc reveal d4">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Highlights &amp; Balayage</h3>
-            </div>
-            <span class="svc__price">from $145</span>
-          </div>
-          <p class="svc__desc">Sun-kissed, natural-looking dimension painted to flatter your complexion. Foils, balayage or a custom blend.</p>
-          <div class="svc__foot">
-            <span class="svc__time">120 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
+      <!-- Facials & Skin -->
+      <article class="svc reveal d4" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Basic / Cleanup Facial</h3></div><span class="svc__price">$49</span></div>
+        <div class="svc__foot"><span class="svc__time">35 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Brightening Facial</h3></div><span class="svc__price">$65</span></div>
+        <div class="svc__foot"><span class="svc__time">45 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Dermaplaning</h3></div><span class="svc__price">$30</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Anti Tanning Facial</h3></div><span class="svc__price">$85</span></div>
+        <div class="svc__foot"><span class="svc__time">50 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Anti Aging Facial</h3></div><span class="svc__price">$100</span></div>
+        <div class="svc__foot"><span class="svc__time">50 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Hydra Facial</h3></div><span class="svc__price">$120</span></div>
+        <div class="svc__foot"><span class="svc__time">1 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Anti Acne Facial</h3></div><span class="svc__price">$85</span></div>
+        <div class="svc__foot"><span class="svc__time">45 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="facials">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Face Bleach</h3></div><span class="svc__price">$20</span></div>
+        <div class="svc__foot"><span class="svc__time">15 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
 
-      </div>
+      <!-- Nails -->
+      <article class="svc reveal d4" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Manicure</h3></div><span class="svc__price">$35</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Pedicure</h3></div><span class="svc__price">$40</span></div>
+        <div class="svc__foot"><span class="svc__time">30 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d2" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Mani + Pedi</h3></div><span class="svc__price">$70</span></div>
+        <div class="svc__foot"><span class="svc__time">1 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d3" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Nails</h3></div><span class="svc__price">From $35</span></div>
+        <div class="svc__foot"><span class="svc__time">1 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d4" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Acrylic Nails</h3></div><span class="svc__price">From $45</span></div>
+        <div class="svc__foot"><span class="svc__time">1 hr</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
+      <article class="svc reveal d1" data-cat="nails">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Mani with Soak Off</h3></div><span class="svc__price">From $35</span></div>
+        <div class="svc__foot"><span class="svc__time">45 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
 
-      <!-- Column 2 -->
-      <div class="services__list">
+      <!-- Men's -->
+      <article class="svc reveal d2" data-cat="mens">
+        <div class="svc__top"><div class="svc__name-wrap"><span class="svc__bar" aria-hidden="true"></span><h3 class="svc__name">Men's Eyebrows</h3></div><span class="svc__price">$10</span></div>
+        <div class="svc__foot"><span class="svc__time">10 min</span><span class="svc__dash" aria-hidden="true"></span></div>
+      </article>
 
-        <article class="svc reveal d1">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Keratin Treatment</h3>
-            </div>
-            <span class="svc__price">from $220</span>
-          </div>
-          <p class="svc__desc">Eliminate frizz and add intense shine with a Brazilian keratin treatment. Smooth, silky results for weeks.</p>
-          <div class="svc__foot">
-            <span class="svc__time">180 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
-
-        <article class="svc reveal d2">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Lash Extensions</h3>
-            </div>
-            <span class="svc__price">from $110</span>
-          </div>
-          <p class="svc__desc">Classic, hybrid or volume lashes meticulously applied for a glamorous, low-maintenance look.</p>
-          <div class="svc__foot">
-            <span class="svc__time">90 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
-
-        <article class="svc reveal d3">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Brow Design</h3>
-            </div>
-            <span class="svc__price">from $25</span>
-          </div>
-          <p class="svc__desc">Threading, waxing or lamination — perfectly sculpted brows that frame your face.</p>
-          <div class="svc__foot">
-            <span class="svc__time">20 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
-
-        <article class="svc reveal d4">
-          <div class="svc__top">
-            <div class="svc__name-wrap">
-              <span class="svc__bar" aria-hidden="true"></span>
-              <h3 class="svc__name">Nails &amp; Gel</h3>
-            </div>
-            <span class="svc__price">from $55</span>
-          </div>
-          <p class="svc__desc">Manicure, pedicure or gel overlay — nails done with precision and a flawless finish.</p>
-          <div class="svc__foot">
-            <span class="svc__time">60 min</span>
-            <span class="svc__dash" aria-hidden="true"></span>
-          </div>
-        </article>
-
-      </div>
     </div>
 
     <div class="services__cta reveal">
       <p style="color: var(--w30); font-size: 13px; margin-bottom: 24px; font-weight: 300;">
         Prices may vary. Contact us for a personalised quote.
       </p>
-      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
+      <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
         <span>Book Your Service</span>
       </a>
     </div>
@@ -584,7 +627,7 @@
     </div>
 
     <div class="reviews__cta reveal">
-      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="reviews__cta-btn">Book Your Appointment</a>
+      <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="reviews__cta-btn">Book Your Appointment</a>
     </div>
   </div>
 </section>
@@ -604,10 +647,10 @@
       Whether it's a fresh cut, a colour refresh or a full beauty day — we're here to make you feel extraordinary.
     </p>
     <div class="reveal d3" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-      <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="btn-luxury">
-        <span>Book on Instagram</span>
+      <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="btn-luxury">
+        <span>Book Now</span>
       </a>
-      <p style="font-size: 11px; color: var(--w20); letter-spacing: 0.2em; text-transform: uppercase;">Walk-ins welcome · DM us anytime</p>
+      <p style="font-size: 11px; color: var(--w20); letter-spacing: 0.2em; text-transform: uppercase;">Walk-ins welcome · Online booking available</p>
     </div>
   </div>
 </section>
@@ -676,8 +719,8 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Booking
         </p>
-        <p class="map__line">Walk-ins welcome<br>or book ahead via Instagram DM</p>
-        <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener" class="map__link">
+        <p class="map__line">Walk-ins welcome<br>or book ahead online</p>
+        <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener" class="map__link">
           Book Now
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -714,12 +757,11 @@
       <div>
         <p class="footer__col-title">Services</p>
         <div class="footer__col-body">
-          <a href="#services">Cut &amp; Style</a>
-          <a href="#services">Colour &amp; Balayage</a>
-          <a href="#services">Lash Extensions</a>
-          <a href="#services">Brow Design</a>
-          <a href="#services">Nails &amp; Gel</a>
-          <a href="#services">Keratin Treatment</a>
+          <a href="#services">Hair</a>
+          <a href="#services">Waxing &amp; Threading</a>
+          <a href="#services">Facials &amp; Skin</a>
+          <a href="#services">Nails</a>
+          <a href="#services">Men's</a>
         </div>
       </div>
       <div>
@@ -744,7 +786,7 @@
         <div class="footer__col-body">
           <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://www.tiktok.com/@slayshine0" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">Book Now</a>
+          <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
     </div>
@@ -761,8 +803,8 @@
 
 <!-- Mobile Sticky Book Button -->
 <div class="mob-book" aria-label="Mobile booking button">
-  <a href="https://www.instagram.com/slayshinesalon/" target="_blank" rel="noopener">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  <a href="https://book.heygoldie.com/Slay-Shine-Salon/checkout" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
     <span>Book Now</span>
   </a>
 </div>
@@ -799,6 +841,22 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
   }, { threshold: 0.1 });
   revealEls.forEach(el => observer.observe(el));
+
+  /* ── Service category filters ── */
+  (function () {
+    const filters = document.querySelectorAll('.svc-filter');
+    const items   = document.querySelectorAll('.services__grid .svc');
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        items.forEach(item => {
+          item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
+        });
+      });
+    });
+  })();
 
   /* ── Live status badge ── */
   (function () {

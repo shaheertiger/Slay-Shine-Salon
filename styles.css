@@ -237,6 +237,15 @@ img { display: block; max-width: 100%; height: auto; }
 .svc:hover .svc__dash { width: 88px; }
 .services__cta { text-align: center; margin-top: 80px; }
 
+/* Service category filters */
+.svc-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 64px; }
+.svc-filter { font-size: 9px; font-weight: 700; letter-spacing: 0.35em; text-transform: uppercase; color: var(--w30); background: transparent; border: 1px solid rgba(255,255,255,0.08); padding: 10px 20px; cursor: pointer; transition: color 0.3s, border-color 0.3s; font-family: 'JetBrains Mono', monospace; }
+.svc-filter:hover { color: var(--w60); border-color: rgba(255,255,255,0.2); }
+.svc-filter.active { color: var(--gold); border-color: rgba(201,168,76,0.5); }
+.services__grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+@media (min-width: 768px) { .services__grid { grid-template-columns: 1fr 1fr; gap: 48px 128px; } }
+.svc.hidden { display: none; }
+
 /* ===== Gallery ===== */
 .gallery__intro { text-align: center; margin-bottom: 64px; }
 .gallery__intro p { color: var(--w40); font-size: 17px; font-weight: 300; line-height: 1.7; max-width: 560px; margin: 0 auto; }
