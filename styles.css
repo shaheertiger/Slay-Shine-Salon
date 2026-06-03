@@ -55,6 +55,10 @@ img { display: block; max-width: 100%; height: auto; }
 .btn-luxury:hover::before { transform: translateX(0); }
 .btn-luxury span { position: relative; z-index: 1; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
 
+.btn-outline { position: relative; display: inline-flex; align-items: center; justify-content: center; padding: 18px 40px; border: 1px solid rgba(255,255,255,0.25); overflow: hidden; transition: border-color 0.4s, background-color 0.4s; cursor: pointer; }
+.btn-outline:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.04); }
+.btn-outline span { position: relative; z-index: 1; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; }
+
 /* Image reveal */
 .img-reveal { position: relative; overflow: hidden; }
 .img-reveal img { transition: transform 0.7s ease-out; transform: scale(1.08); }
@@ -116,6 +120,7 @@ img { display: block; max-width: 100%; height: auto; }
 .nav-side--right { justify-content: flex-end; }
 .navbar__link { font-size: 9px; font-weight: 700; letter-spacing: 0.4em; text-transform: uppercase; color: var(--w40); transition: color 0.4s; }
 .navbar__link:hover { color: var(--gold); }
+.navbar__link--call { color: var(--gold); }
 
 .navbar__logo { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; z-index: 10; }
 .navbar__logo img { height: 90px; width: auto; object-fit: contain; filter: drop-shadow(0 0 12px rgba(201,168,76,0.3)); transition: filter 0.3s; }
@@ -133,7 +138,8 @@ img { display: block; max-width: 100%; height: auto; }
 .drawer__nav { display: flex; flex-direction: column; align-items: center; gap: 40px; margin-bottom: 48px; }
 .drawer__nav a { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 500; color: #fff; transition: color 0.3s; }
 .drawer__nav a:hover { color: var(--gold); }
-.drawer__cta { margin-top: 16px; }
+.drawer__cta { margin-top: 16px; display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 280px; }
+.drawer__cta .btn-luxury, .drawer__cta .btn-outline { width: 100%; }
 
 /* ===== Hero ===== */
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background: var(--dark); }
@@ -334,10 +340,14 @@ img { display: block; max-width: 100%; height: auto; }
 .mob-book { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; padding: 20px 24px; pointer-events: none; }
 @media (min-width: 768px) { .mob-book { display: none; } }
 .mob-book::before { content: ''; position: absolute; inset-x: 0; bottom: 0; height: 120px; background: linear-gradient(to top, var(--dark), transparent); pointer-events: none; }
-.mob-book a { pointer-events: auto; position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 20px; background: var(--gold); animation: goldPulse 2.5s ease-in-out infinite; transition: transform 0.1s; }
+.mob-book { display: flex; gap: 12px; }
+.mob-book a { pointer-events: auto; position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 10px; flex: 1; padding: 18px; transition: transform 0.1s; }
 .mob-book a:active { transform: scale(0.97); }
-.mob-book span { font-size: 11px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: #0a0a0a; }
-.mob-book svg { color: #0a0a0a; }
+.mob-book__book { background: var(--gold); animation: goldPulse 2.5s ease-in-out infinite; }
+.mob-book__book span, .mob-book__book svg { color: #0a0a0a; }
+.mob-book__call { background: rgba(10,10,10,0.85); border: 1px solid rgba(201,168,76,0.5); backdrop-filter: blur(8px); }
+.mob-book__call span, .mob-book__call svg { color: var(--gold); }
+.mob-book span { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
 @keyframes goldPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(201,168,76,0); } 50% { box-shadow: 0 0 20px 8px rgba(201,168,76,0.15); } }
 
 /* ===== Sparkle deco ===== */
