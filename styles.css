@@ -244,6 +244,15 @@ img { display: block; max-width: 100%; height: auto; }
 .svc__dash { height: 1px; width: 56px; background: linear-gradient(to right, rgba(201,168,76,0.4), transparent); transition: width 1s cubic-bezier(0.16,1,0.3,1); }
 .svc:hover .svc__dash { width: 88px; }
 .services__cta { text-align: center; margin-top: 80px; }
+.svc-group { margin-bottom: 96px; }
+.svc-group:last-child { margin-bottom: 0; }
+.svc-group__head { margin-bottom: 48px; }
+.svc-group__title { font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 34px); font-weight: 500; color: #fff; margin-bottom: 16px; }
+.svc-group__title em { color: var(--gold); font-style: italic; }
+.svc-group__line { width: 48px; height: 1px; background: var(--gold); }
+.svc-grid { display: grid; gap: 44px; }
+@media (min-width: 768px) { .svc-grid { grid-template-columns: 1fr 1fr; gap: 44px 96px; } }
+.svc--compact .svc__foot { margin-top: 4px; }
 
 /* ===== Gallery ===== */
 .gallery__intro { text-align: center; margin-bottom: 64px; }
